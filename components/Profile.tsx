@@ -24,13 +24,13 @@ const Profile = () => {
   return (
     <AnimatePresence>
       <div className="h-[120px] flex items-center p-4 gap-4">
-        <div className="p-0.5 rounded-full bg-accent border ">
+        <div className="p-0.5 bg-accent border  [corner-shape:squircle_squircle_squircle_squircle] rounded-[100px]">
           <Image
             src="/profile.jpg"
             width={100}
             height={100}
             alt="profile"
-            className="rounded-full shadow"
+            className="[corner-shape:squircle_squircle_squircle_squircle] rounded-[150px] shadow"
           />
         </div>
         <div className="flex justify-between w-full">

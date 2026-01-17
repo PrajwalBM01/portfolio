@@ -1,7 +1,5 @@
 import React from "react";
 import { Badge } from "./ui/badge";
-import { JavaScript } from "./icons/js";
-
 const StackBadge = ({
   name,
   children,
@@ -10,7 +8,7 @@ const StackBadge = ({
   children?: React.ReactNode;
 }) => {
   return (
-    <Badge className="bg-accent text-primary rounded px-2">
+    <Badge className="bg-accent text-primary rounded px-2 shadow">
       {children}
       {name}
     </Badge>
