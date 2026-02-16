@@ -24,9 +24,9 @@ const page = () => {
       src="/project-videos/dolist.mp4"
       title="Fightclub"
       description="A tribute to the movie Fight Club, filled with motion graphics and animations that tell the story of Tyler Durden, Marla singer and the Narrator. It includes character introductions and the rules of Fight Club (which I just broke). SO DO NOT TALK ABOUT F**** C*** "
-      github="https://github.com/PrajwalBM01/fight_club"
-      website="https://fight-club-beta.vercel.app/"
-      post="https://x.com/xshadowdev/status/1933207912056582525?s=20"
+      github="https://github.com/PrajwalBM01/dolist"
+      website="https://dolist-1.onrender.com/"
+      post="https://x.com/xshadowdev/status/1920515060184822039?s=20"
     >
       <div className="flex flex-wrap gap-2">
         <StackBadge name={"react"}>
