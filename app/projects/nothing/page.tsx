@@ -24,7 +24,7 @@ const nothing = () => {
   const currentTheme = mounted && resolvedTheme ? resolvedTheme : "light";
   return (
     <ProjectDetials
-      src="/project-videos/nothing.mp4"
+      src="https://d2ac3v28w5mhij.cloudfront.net/nothing.mp4"
       title="NOTHING"
       description="A Bento-style design for the Nothing Phone, featuring SVG animations and motion graphics along with light and dark mode variations, interactive buttons, and a 3D model."
       github="https://github.com/PrajwalBM01/NTG-bento"
@@ -39,14 +39,14 @@ const nothing = () => {
           <Tailwindcss />
         </StackBadge>
         <StackBadge name={"typescript"}>
-              <Typescript />
-            </StackBadge>
+          <Typescript />
+        </StackBadge>
         <StackBadge name={"motion.dev"}>
           {currentTheme === "dark" ? <MotionDark /> : <Motion />}
         </StackBadge>
         <StackBadge name="React Three Fiber">
-              {currentTheme === "dark" ? <ThreejsDark /> : <ThreejsLight />}
-            </StackBadge>
+          {currentTheme === "dark" ? <ThreejsDark /> : <ThreejsLight />}
+        </StackBadge>
       </div>
     </ProjectDetials>
   );

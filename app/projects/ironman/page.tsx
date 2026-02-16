@@ -22,7 +22,7 @@ const ironman = () => {
   const currentTheme = mounted && resolvedTheme ? resolvedTheme : "light";
   return (
     <ProjectDetials
-      src="/project-videos/ironman.mp4"
+      src="https://d2ac3v28w5mhij.cloudfront.net/ironman.mp4"
       title="Ironman"
       description="An archival documentary of Iron Man's Mark 1 suit, featuring a 3D model and interactive parts. It dissects each part of the suit in detail, along with their specifications and summaries, to dive into the world of Tony Stark's marvelous engineering."
       github="https://github.com/PrajwalBM01/mark_1"
