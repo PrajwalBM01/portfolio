@@ -1,6 +1,6 @@
 "use client";
 import { useTheme } from "next-themes";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Linkedin } from "./ui/svgs/linkedin";
 import { XDark } from "./ui/svgs/xDark";
 import { X } from "./ui/svgs/x";
@@ -10,7 +10,14 @@ import { Gmail } from "./ui/svgs/gmail";
 import { Tooltip, TooltipContent, TooltipTrigger } from "./ui/tooltip";
 
 const Description = () => {
-  const { theme } = useTheme();
+  const { resolvedTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  const currentTheme = mounted && resolvedTheme ? resolvedTheme : "light";
   return (
     <div className="p-2 flex flex-col gap-2">
       <div className="flex flex-col gap-2">
@@ -43,7 +50,7 @@ const Description = () => {
             className="flex gap-1 justify-center items-center px-2"
           >
             <span className="size-4">
-              {theme === "dark" ? <XDark /> : <X />}
+              {currentTheme === "dark" ? <XDark /> : <X />}
             </span>
             <span>Twitter(x)</span>
           </a>
@@ -53,7 +60,7 @@ const Description = () => {
             className="flex gap-1 justify-center items-center px-2"
           >
             <span className="size-4">
-              {theme === "dark" ? <GithubDark /> : <GithubLight />}
+              {currentTheme === "dark" ? <GithubDark /> : <GithubLight />}
             </span>
             <span>Github</span>
           </a>

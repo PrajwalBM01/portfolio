@@ -13,6 +13,7 @@ import Image from "next/image";
 import Stacks from "@/components/Stacks";
 import Description from "@/components/Description";
 import Link from "next/link";
+import Project from "@/components/Project";
 
 export default function Home() {
   return (
@@ -144,20 +145,114 @@ export default function Home() {
         <div className="p-2 flex flex-col gap-2">
           <div className="flex flex-col gap-2">
             <h1 className="font-xmono text-xl text-destructive">My Works.</h1>
-            <div className="flex justify-center items-center gap-20">
-              <div className="border aspect-square h-40"></div>
-              <div className="border aspect-square h-40"></div>
+            <div className="grid grid-cols-2 justify-center items-center gap-20 px-4">
+              <Project
+                href="./projects/ironman"
+                src="/mark1.png"
+                title="Mark 1"
+                description="A 3D showcase of Ironman's Mark 1 suite in a interactive way."
+              ></Project>
+              <Project
+                href="./projects/fightclub"
+                src="/fightclub.png"
+                title="Fight Club"
+                description="A tribute to the movie fight club, with motion graphics and animations."
+              ></Project>
+              <Project
+                href="./projects/nothing"
+                src="/nothingdark.png"
+                title="Nothing"
+                description="A Bento design on Nothing phone"
+              ></Project>
+              <Project
+                href="./projects/dolist"
+                src="/dolist.png"
+                title="Dolist"
+                description="A fullstack task and todo manager."
+              ></Project>
+              {/* <Link
+                href={"./projects/ironman"}
+                className="bg-accent/50 border hover:border-transparent rounded-md p-1.5 group hover:bg-accent transition-colors duration-200 cursor-pointer"
+              >
+                <div className="h-full w-full">
+                  <Image
+                    src="/mark1.png"
+                    alt="ironman"
+                    width={400}
+                    height={400}
+                    className="rounded-sm border"
+                  />
+                </div>
+                <div>
+                  <h1>Mark 1</h1>
+                  <p>this is a project of mark 1</p>
+                </div>
+              </Link> */}
+              {/* <Link
+                href={"./projects/fightclub"}
+                className="bg-accent/50 border hover:border-transparent rounded-md p-1.5 group hover:bg-accent transition-colors duration-200 cursor-pointer"
+              >
+                <div className="h-full w-full">
+                  <Image
+                    src="/fightclub.png"
+                    alt="figtclub"
+                    width={400}
+                    height={400}
+                    className="rounded-sm border"
+                  />
+                </div>
+                <div>
+                  <h1>Fightclub</h1>
+                  <p>this is a project on fight club </p>
+                </div>
+              </Link>
+              <Link
+                href={"./projects/nothing"}
+                className="bg-accent/50 border hover:border-transparent rounded-md p-1.5 group hover:bg-accent transition-colors duration-200 cursor-pointer"
+              >
+                <div className="h-full w-full">
+                  <Image
+                    src="/nothingdark.png"
+                    alt="nothing"
+                    width={400}
+                    height={400}
+                    className="rounded-sm border"
+                  />
+                </div>
+                <div>
+                  <h1>Nothing</h1>
+                  <p>this is a project on Nothing </p>
+                </div>
+              </Link> */}
+              {/* <Link
+                href={"./projects/dolist"}
+                className="bg-accent/50 border hover:border-transparent rounded-md p-1.5 group hover:bg-accent transition-colors duration-200 cursor-pointer"
+              >
+                <div className="h-full w-full">
+                  <Image
+                    src="/doList.png"
+                    alt="dolist"
+                    width={400}
+                    height={400}
+                    className="rounded-sm border"
+                  />
+                </div>
+                <div className="border text-balance">
+                  <h1>Figdolisthtclub</h1>
+                  <p>this is a project on task ma hjgjhgjhgjhgjhgjhgjhgjhg</p>
+                </div>
+              </Link> */}
             </div>
             <div className="flex justify-end">
-              <Button className="px-0 py-0 text-background">
+              {/* <Button className="px-0 py-0 text-background">
                 View All <ArrowUpRight color="red" />
-              </Button>
+              </Button> */}
             </div>
           </div>
         </div>
         <div className="p-2 flex flex-col gap-2">
           <div className="flex flex-col gap-2">
-            <h1 className="font-xmono text-xl text-destructive">Blogs.</h1>
+            <h1 className="font-xmono text-xl text-destructive">Readings.</h1>
             <div className="px-4 flex flex-col gap-2">
               <Link
                 href={"./blogs/shadcn"}
@@ -166,10 +261,11 @@ export default function Home() {
                 <span>
                   <h1>Shadcn/ui Internals</h1>
                   <p className="text-xs text-foreground/50">
-                    Get into the internals of shadcn and understand the architecture.
+                    Get into the internals of shadcn and understand the
+                    architecture.
                   </p>
                 </span>
-                <ArrowUpRight className="opacity-0 group-hover:opacity-100 transition-opacity duration-200" />
+                <ArrowUpRight className="opacity-10 group-hover:opacity-100 group-hover:rotate-45 transition-all duration-200" />
               </Link>
               {/* <div className="bg-accent/50 border hover:border-transparent rounded-md p-4 group hover:bg-accent transition-colors duration-200 cursor-pointer flex justify-between items-center">
                 <span>

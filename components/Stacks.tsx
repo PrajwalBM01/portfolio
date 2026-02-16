@@ -1,6 +1,7 @@
 "use client";
 import StackBadge from "./StackBadge";
 import { useTheme } from "next-themes";
+import { useEffect, useState } from "react";
 import { Javascript } from "./ui/svgs/javascript";
 import { Typescript } from "./ui/svgs/typescript";
 import { Html5 } from "./ui/svgs/html5";
@@ -35,7 +36,14 @@ import { Npm } from "./ui/svgs/npm";
 import { NextjsIconDark } from "./ui/svgs/nextjsIconDark";
 
 const Stacks = () => {
-  const { theme } = useTheme();
+  const { resolvedTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  const currentTheme = mounted && resolvedTheme ? resolvedTheme : "light";
   return (
     <div className="flex flex-col gap-2">
       <h1 className="font-xmono text-xl text-destructive">Stack.</h1>
@@ -61,7 +69,7 @@ const Stacks = () => {
           <p className="text-sm text-primary/60">Frontend</p>
           <div className="flex flex-wrap gap-2">
             <StackBadge name={"react"}>
-              {theme === "dark" ? <ReactDark /> : <ReactLight />}
+              {currentTheme === "dark" ? <ReactDark /> : <ReactLight />}
             </StackBadge>
             <StackBadge name={"nextjs"}>
               <NextjsIconDark />
@@ -73,16 +81,16 @@ const Stacks = () => {
               <Gsap />
             </StackBadge>
             <StackBadge name={"motion.dev"}>
-              {theme === "dark" ? <MotionDark /> : <Motion />}
+              {currentTheme === "dark" ? <MotionDark /> : <Motion />}
             </StackBadge>
             <StackBadge name={"shadcn"}>
-              {theme === "dark" ? <ShadcnUiDark /> : <ShadcnUi />}
+              {currentTheme === "dark" ? <ShadcnUiDark /> : <ShadcnUi />}
             </StackBadge>
             <StackBadge name={"tanstack"}>
               <TanStack />
             </StackBadge>
             <StackBadge name="threejs">
-              {theme === "dark" ? <ThreejsDark /> : <ThreejsLight />}
+              {currentTheme === "dark" ? <ThreejsDark /> : <ThreejsLight />}
             </StackBadge>
             <StackBadge name={"zustand"}></StackBadge>
           </div>
@@ -94,7 +102,7 @@ const Stacks = () => {
               <Nodejs />
             </StackBadge>
             <StackBadge name={"express"}>
-              {theme === "dark" ? <ExpressjsDark /> : <Expressjs />}
+              {currentTheme === "dark" ? <ExpressjsDark /> : <Expressjs />}
             </StackBadge>
             <StackBadge name={"jwt"}>
               <Jwt />
@@ -103,10 +111,10 @@ const Stacks = () => {
               <Postgresql />
             </StackBadge>
             <StackBadge name={"mogodb"}>
-              {theme === "dark" ? <MongodbIconDark /> : <MongodbIconLight />}
+              {currentTheme === "dark" ? <MongodbIconDark /> : <MongodbIconLight />}
             </StackBadge>
             <StackBadge name={"prisma"}>
-              {theme === "dark" ? <PrismaDark /> : <Prisma />}
+              {currentTheme === "dark" ? <PrismaDark /> : <Prisma />}
             </StackBadge>
             <StackBadge name={"neondb"}>
               <Neon />
@@ -117,14 +125,14 @@ const Stacks = () => {
           <p className="text-sm text-primary/60">And also</p>
           <div className="flex flex-wrap gap-2">
             <StackBadge name={"Cursor"}>
-              {theme === "dark" ? <CursorDark /> : <CursorLight />}
+              {currentTheme === "dark" ? <CursorDark /> : <CursorLight />}
             </StackBadge>
 
             <StackBadge name={"postman"}>
               <Postman />
             </StackBadge>
             <StackBadge name={"vercel"}>
-              {theme === "dark" ? <VercelDark /> : <Vercel />}
+              {currentTheme === "dark" ? <VercelDark /> : <Vercel />}
             </StackBadge>
             <StackBadge name={"NPM"}>
               <Npm />
