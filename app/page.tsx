@@ -166,7 +166,7 @@ export default function Home() {
               />
               <Project
                 href="./projects/dolist"
-                src="/dolist.png"
+                src="/doList.png"
                 title="Dolist"
                 description="A fullstack task and todo manager."
               />
