@@ -25,11 +25,11 @@ const kalam = Kalam({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://kartik017.vercel.app'),
+  metadataBase: new URL('https://prajwalbm.vercel.app/'),
   title: 'Prajwal B M',
   description: 'Know me better as a developer.',
   openGraph: {
-    url: 'https://kartik017.vercel.app/',
+    url: 'https://prajwalbm.vercel.app/',
     siteName: 'Prajwal B M Portfolio',
     locale: 'en_US',
     type: 'website',
