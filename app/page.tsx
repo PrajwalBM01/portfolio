@@ -15,6 +15,7 @@ import Description from "@/components/Description";
 import Link from "next/link";
 import Project from "@/components/Project";
 
+
 export default function Home() {
   return (
     <div className="bg-background flex flex-col justify-center items-center h-full">
@@ -151,97 +152,25 @@ export default function Home() {
                 src="/mark1.png"
                 title="Mark 1"
                 description="A 3D showcase of Ironman's Mark 1 suite in a interactive way."
-              ></Project>
+              />
               <Project
                 href="./projects/fightclub"
                 src="/fightclub.png"
                 title="Fight Club"
                 description="A tribute to the movie fight club, with motion graphics and animations."
-              ></Project>
+              />
               <Project
                 href="./projects/nothing"
                 src="/nothingdark.png"
                 title="Nothing"
                 description="A Bento design on Nothing phone"
-              ></Project>
+              />
               <Project
                 href="./projects/dolist"
                 src="/dolist.png"
                 title="Dolist"
                 description="A fullstack task and todo manager."
-              ></Project>
-              {/* <Link
-                href={"./projects/ironman"}
-                className="bg-accent/50 border hover:border-transparent rounded-md p-1.5 group hover:bg-accent transition-colors duration-200 cursor-pointer"
-              >
-                <div className="h-full w-full">
-                  <Image
-                    src="/mark1.png"
-                    alt="ironman"
-                    width={400}
-                    height={400}
-                    className="rounded-sm border"
-                  />
-                </div>
-                <div>
-                  <h1>Mark 1</h1>
-                  <p>this is a project of mark 1</p>
-                </div>
-              </Link> */}
-              {/* <Link
-                href={"./projects/fightclub"}
-                className="bg-accent/50 border hover:border-transparent rounded-md p-1.5 group hover:bg-accent transition-colors duration-200 cursor-pointer"
-              >
-                <div className="h-full w-full">
-                  <Image
-                    src="/fightclub.png"
-                    alt="figtclub"
-                    width={400}
-                    height={400}
-                    className="rounded-sm border"
-                  />
-                </div>
-                <div>
-                  <h1>Fightclub</h1>
-                  <p>this is a project on fight club </p>
-                </div>
-              </Link>
-              <Link
-                href={"./projects/nothing"}
-                className="bg-accent/50 border hover:border-transparent rounded-md p-1.5 group hover:bg-accent transition-colors duration-200 cursor-pointer"
-              >
-                <div className="h-full w-full">
-                  <Image
-                    src="/nothingdark.png"
-                    alt="nothing"
-                    width={400}
-                    height={400}
-                    className="rounded-sm border"
-                  />
-                </div>
-                <div>
-                  <h1>Nothing</h1>
-                  <p>this is a project on Nothing </p>
-                </div>
-              </Link> */}
-              {/* <Link
-                href={"./projects/dolist"}
-                className="bg-accent/50 border hover:border-transparent rounded-md p-1.5 group hover:bg-accent transition-colors duration-200 cursor-pointer"
-              >
-                <div className="h-full w-full">
-                  <Image
-                    src="/doList.png"
-                    alt="dolist"
-                    width={400}
-                    height={400}
-                    className="rounded-sm border"
-                  />
-                </div>
-                <div className="border text-balance">
-                  <h1>Figdolisthtclub</h1>
-                  <p>this is a project on task ma hjgjhgjhgjhgjhgjhgjhgjhg</p>
-                </div>
-              </Link> */}
+              />
             </div>
             <div className="flex justify-end">
               {/* <Button className="px-0 py-0 text-background">

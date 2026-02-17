@@ -1,9 +1,15 @@
 "use client";
 import ProjectDetials from "@/components/ProjectDetials";
 import StackBadge from "@/components/StackBadge";
+import { Expressjs } from "@/components/ui/svgs/expressjs";
+import { ExpressjsDark } from "@/components/ui/svgs/expressjsDark";
 import { Javascript } from "@/components/ui/svgs/javascript";
+import { Jwt } from "@/components/ui/svgs/jwt";
+import { MongodbIconDark } from "@/components/ui/svgs/mongodbIconDark";
+import { MongodbIconLight } from "@/components/ui/svgs/mongodbIconLight";
 import { Motion } from "@/components/ui/svgs/motion";
 import { MotionDark } from "@/components/ui/svgs/motionDark";
+import { Nodejs } from "@/components/ui/svgs/nodejs";
 import { ReactDark } from "@/components/ui/svgs/reactDark";
 import { ReactLight } from "@/components/ui/svgs/reactLight";
 import { Tailwindcss } from "@/components/ui/svgs/tailwindcss";
@@ -22,8 +28,9 @@ const page = () => {
   return (
     <ProjectDetials
       src="https://d2ac3v28w5mhij.cloudfront.net/dolist.mp4"
-      title="Fightclub"
-      description="A tribute to the movie Fight Club, filled with motion graphics and animations that tell the story of Tyler Durden, Marla singer and the Narrator. It includes character introductions and the rules of Fight Club (which I just broke). SO DO NOT TALK ABOUT F**** C*** "
+      // src="ff"
+      title="Dolist"
+      description="A full-stack application for managing tasks and to-do lists, featuring the ability to add, delete, and edit tasks. It also segregates tasks into 'Today,' 'Upcoming,' and 'Completed' categories."
       github="https://github.com/PrajwalBM01/dolist"
       website="https://dolist-1.onrender.com/"
       post="https://x.com/xshadowdev/status/1920515060184822039?s=20"
@@ -40,6 +47,19 @@ const page = () => {
         </StackBadge>
         <StackBadge name={"motion.dev"}>
           {currentTheme === "dark" ? <MotionDark /> : <Motion />}
+        </StackBadge>
+        <StackBadge name={"zustand"}></StackBadge>
+        <StackBadge name={"node.js"}>
+          <Nodejs />
+        </StackBadge>
+        <StackBadge name={"express"}>
+          {currentTheme === "dark" ? <ExpressjsDark /> : <Expressjs />}
+        </StackBadge>
+        <StackBadge name={"jwt"}>
+          <Jwt />
+        </StackBadge>
+        <StackBadge name={"mogodb"}>
+          {currentTheme === "dark" ? <MongodbIconDark /> : <MongodbIconLight />}
         </StackBadge>
       </div>
     </ProjectDetials>

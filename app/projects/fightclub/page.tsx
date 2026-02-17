@@ -22,6 +22,7 @@ const page = () => {
   return (
     <ProjectDetials
       src="https://d3qw2mvgwe85u8.cloudfront.net/uploads/fightclub.mp4"
+      // src="fff"
       title="Fightclub"
       description="A tribute to the movie Fight Club, filled with motion graphics and animations that tell the story of Tyler Durden, Marla singer and the Narrator. It includes character introductions and the rules of Fight Club (which I just broke). SO DO NOT TALK ABOUT F**** C*** "
       github="https://github.com/PrajwalBM01/fight_club"

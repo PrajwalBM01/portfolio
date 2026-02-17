@@ -25,6 +25,7 @@ const nothing = () => {
   return (
     <ProjectDetials
       src="https://d2ac3v28w5mhij.cloudfront.net/nothing.mp4"
+      // src="fff"
       title="NOTHING"
       description="A Bento-style design for the Nothing Phone, featuring SVG animations and motion graphics along with light and dark mode variations, interactive buttons, and a 3D model."
       github="https://github.com/PrajwalBM01/NTG-bento"
