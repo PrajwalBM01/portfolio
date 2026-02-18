@@ -145,7 +145,7 @@ export default function Home() {
         <div className="p-2 flex flex-col gap-2">
           <div className="flex flex-col gap-2">
             <h1 className="font-xmono text-xl text-destructive">My Works.</h1>
-            <div className="grid grid-cols-2 justify-center items-center gap-5 px-4">
+            <div className="grid md:grid-cols-2 justify-center items-center gap-5 px-4">
               <Project
                 href="./projects/ironman"
                 src="/mark1.png"

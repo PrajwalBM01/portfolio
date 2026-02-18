@@ -110,7 +110,7 @@ const Stacks = () => {
             <StackBadge name={"postgres"}>
               <Postgresql />
             </StackBadge>
-            <StackBadge name={"mogodb"}>
+            <StackBadge name={"mongodb"}>
               {currentTheme === "dark" ? <MongodbIconDark /> : <MongodbIconLight />}
             </StackBadge>
             <StackBadge name={"prisma"}>
