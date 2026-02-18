@@ -14,7 +14,6 @@ import Description from "@/components/Description";
 import Link from "next/link";
 import Project from "@/components/Project";
 
-
 export default function Home() {
   return (
     <div className="bg-background flex flex-col justify-center items-center h-full">
@@ -193,7 +192,7 @@ export default function Home() {
                     architecture.
                   </p>
                 </span>
-                <ArrowUpRight className="opacity-10 group-hover:opacity-100 group-hover:rotate-45 transition-all duration-200" />
+                <ArrowUpRight className="opacity-25 group-hover:opacity-100 group-hover:rotate-45 transition-all duration-200" />
               </Link>
               {/* <div className="bg-accent/50 border hover:border-transparent rounded-md p-4 group hover:bg-accent transition-colors duration-200 cursor-pointer flex justify-between items-center">
                 <span>
