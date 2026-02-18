@@ -35,7 +35,7 @@ const Description = () => {
         <h1 className="font-xmono text-destructive text-xl">
           Connect with me on
         </h1>
-        <div className="flex items-center gap-4 px-4">
+        <div className="flex items-center gap-4 px-4 flex-wrap">
           <a
             href="https://www.linkedin.com/in/prajwalbm/"
             target="_blank"

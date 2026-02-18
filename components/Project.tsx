@@ -38,8 +38,8 @@ const Project = ({ href, src, title, description }: ProjectTypes) => {
         />
       </div>
       <div>
-        <h1 className="text-lg font-semibold">{title}</h1>
-        <p className="text-sm text-foreground/50">{description}</p>
+        <h1 className="md:text-lg font-semibold">{title}</h1>
+        <p className=" text-xs md:text-sm text-foreground/50">{description}</p>
       </div>
       <div className="flex items-center justify-end gap-2">
         <p className="text-xs opacity-0 group-hover:opacity-100 transition-all duration-200">

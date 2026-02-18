@@ -35,7 +35,7 @@ const Profile = () => {
         </div>
         <div className="flex justify-between w-full">
           <div className=" h-full flex flex-col justify-center gap-2">
-            <div className="text-2xl">
+            <div className="md:text-2xl">
               <span>Just an another </span>
 
               <AnimatePresence mode="wait">
@@ -52,11 +52,11 @@ const Profile = () => {
               </AnimatePresence>
             </div>
             <div className="flex gap-2 items-end">
-              <span className="text-xl font-bold">Prajwal B M</span>
+              <span className="md:text-xl font-bold">Prajwal B M</span>
               <a
                 href="https://x.com/xshadowdev"
                 target="_blank"
-                className="text-sm cursor-pointer text-primary/20 hover:text-primary transition-colors duration-150"
+                className="text-xs md:text-sm cursor-pointer text-primary/20 hover:text-primary transition-colors duration-150"
               >
                 / @xshadowdev
               </a>
