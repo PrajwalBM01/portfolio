@@ -36,34 +36,52 @@ const Description = () => {
           Connect with me on
         </h1>
         <div className="flex items-center gap-4 px-4 flex-wrap">
-          <a
-            href="https://www.linkedin.com/in/prajwalbm/"
-            target="_blank"
-            className="flex gap-1 justify-center items-center px-2"
-          >
-            <Linkedin className="size-4" />
-            <span>Linkedin</span>
-          </a>
-          <a
-            href="https://x.com/xshadowdev"
-            target="_blank"
-            className="flex gap-1 justify-center items-center px-2"
-          >
-            <span className="size-4">
-              {currentTheme === "dark" ? <XDark /> : <X />}
-            </span>
-            <span>Twitter(x)</span>
-          </a>
-          <a
-            href="https://github.com/PrajwalBM01"
-            target="_blank"
-            className="flex gap-1 justify-center items-center px-2"
-          >
-            <span className="size-4">
-              {currentTheme === "dark" ? <GithubDark /> : <GithubLight />}
-            </span>
-            <span>Github</span>
-          </a>
+          <Tooltip>
+            <TooltipTrigger>
+              <a
+                href="https://www.linkedin.com/in/prajwalbm/"
+                target="_blank"
+                className="flex gap-1 justify-center items-center px-2"
+              >
+                <Linkedin className="size-4" />
+                <span>Linkedin</span>
+              </a>
+            </TooltipTrigger>
+            <TooltipContent>Prajwal BM</TooltipContent>
+          </Tooltip>
+
+          <Tooltip>
+            <TooltipTrigger>
+              <a
+                href="https://x.com/xshadowdev"
+                target="_blank"
+                className="flex gap-1 justify-center items-center px-2"
+              >
+                <span className="size-4">
+                  {currentTheme === "dark" ? <XDark /> : <X />}
+                </span>
+                <span>Twitter(x)</span>
+              </a>
+            </TooltipTrigger>
+            <TooltipContent>@xshadowdev</TooltipContent>
+          </Tooltip>
+
+          <Tooltip>
+            <TooltipTrigger>
+              <a
+                href="https://github.com/PrajwalBM01"
+                target="_blank"
+                className="flex gap-1 justify-center items-center px-2"
+              >
+                <span className="size-4">
+                  {currentTheme === "dark" ? <GithubDark /> : <GithubLight />}
+                </span>
+                <span>Github</span>
+              </a>
+            </TooltipTrigger>
+            <TooltipContent>PrajwalBM01</TooltipContent>
+          </Tooltip>
+
           <Tooltip>
             <TooltipTrigger asChild>
               <a
@@ -74,9 +92,7 @@ const Description = () => {
                 <span>Gmail</span>
               </a>
             </TooltipTrigger>
-            <TooltipContent>
-              bmprajwaldvg@gmail.com
-            </TooltipContent>
+            <TooltipContent>bmprajwaldvg@gmail.com</TooltipContent>
           </Tooltip>
         </div>
       </div>
