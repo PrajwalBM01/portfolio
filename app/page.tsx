@@ -23,7 +23,98 @@ export default function Home() {
 
         <div className="flex flex-col p-2">
           <h1 className="font-xmono text-xl text-destructive">Expriences.</h1>
-          <div className="flex">
+          <div className="flex items-center justify-center">
+            <Accordion
+              type="single"
+              collapsible
+              defaultValue="item-1"
+              className="w-2xl px-4 rounded"
+            >
+              <AccordionItem value="item-1">
+                <AccordionTrigger>
+                  <div className=" w-full flex justify-between">
+                    <div className="flex gap-2">
+                      <svg
+                        width="40"
+                        height="40"
+                        viewBox="0 0 200 200"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M118 45C118 39.4772 113.523 35 108 35H30C24.4772 35 20 30.5228 20 25V15C20 9.47715 24.4772 5 30 5L118 5C134.569 5 148 18.4315 148 35V69C148 73.4183 151.582 77 156 77V77C169.255 77 180 87.7452 180 101V165C180 181.569 166.569 195 150 195H30C24.4772 195 20 190.523 20 185V175C20 169.477 24.4772 165 30 165H140C145.523 165 150 160.523 150 155V117C150 111.477 145.523 107 140 107H63C57.4772 107 53 102.523 53 97V87C53 81.4772 57.4772 77 63 77H108C113.523 77 118 72.5228 118 67V45Z"
+                          fill="url(#paint0_linear_134_6)"
+                        />
+                        <defs>
+                          <linearGradient
+                            id="paint0_linear_134_6"
+                            x1="20"
+                            y1="5"
+                            x2="180"
+                            y2="195"
+                            gradientUnits="userSpaceOnUse"
+                          >
+                            <stop stop-color="#16AEF9" />
+                            <stop offset="0.314328" stop-color="#7DE598" />
+                            <stop offset="0.612817" stop-color="#FFE717" />
+                            <stop offset="1" stop-color="#F975FF" />
+                          </linearGradient>
+                        </defs>
+                      </svg>
+                      <div className="flex flex-col justify-center items-start">
+                        <h1 className="font-semibold text-base ">
+                          Brutanix Studio
+                        </h1>
+                        <p className="text-foreground/50 text-xs flex gap-2 justify-center items-center">
+                          Frontend Developer
+                        </p>
+                      </div>
+                    </div>
+                    <div className="flex flex-col justify-center items-end">
+                      <h1 className="flex gap-2">India-Remote</h1>
+                      <p className="text-foreground/50  text-xs">
+                        March,2026 - present
+                      </p>
+                    </div>
+                  </div>
+                </AccordionTrigger>
+                <AccordionContent className="flex flex-col gap-2">
+                  <hr />
+                  <div className="flex flex-row items-start gap-2 px-2">
+                    <div className="mt-[7px] h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/50"></div>
+                    <span className="tracking-tight text-muted-foreground">
+                      Building amazing websites for clients.
+                    </span>
+                  </div>
+                  <div className="flex gap-2">
+                    {" "}
+                    <Badge
+                      variant="secondary"
+                      className="text-[0.7rem] text-thin py-0 px-1 rounded"
+                    >
+                      next.js
+                    </Badge>
+                    <Badge
+                      variant="secondary"
+                      className="text-[0.7rem] text-thin py-0 px-1 rounded"
+                    >
+                      typescript
+                    </Badge>
+                    <Badge
+                      variant="secondary"
+                      className="text-[0.7rem] text-thin py-0 px-1 rounded"
+                    >
+                      zustand
+                    </Badge>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
+            </Accordion>
+          </div>
+
+          <div className="flex items-center justify-center">
             <Accordion
               type="single"
               collapsible
