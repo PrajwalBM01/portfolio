@@ -134,7 +134,7 @@ export default function Home() {
                       />
                       <div className="flex flex-col justify-center items-start">
                         <h1 className="font-semibold text-base ">
-                          Modeulsuite.ai
+                          Modelsuite.ai
                         </h1>
                         <p className="text-foreground/50 text-xs flex gap-2 justify-center items-center">
                           Frontend Developer

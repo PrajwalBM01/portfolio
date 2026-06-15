@@ -124,9 +124,6 @@ const Stacks = () => {
         <div className="flex flex-col gap-1">
           <p className="text-sm text-primary/60">And also</p>
           <div className="flex flex-wrap gap-2">
-            <StackBadge name={"Cursor"}>
-              {currentTheme === "dark" ? <CursorDark /> : <CursorLight />}
-            </StackBadge>
 
             <StackBadge name={"postman"}>
               <Postman />
