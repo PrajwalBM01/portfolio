@@ -20,17 +20,11 @@ const Description = () => {
   const currentTheme = mounted && resolvedTheme ? resolvedTheme : "light";
   return (
     <div className="p-2 flex flex-col gap-2">
-      <div className="flex flex-col gap-2">
+      {/* <div className="flex flex-col gap-2">
         <p className="px-2">
-          I see web development as a craft. I’m the type of person who stays up
-          late obsessing over pixels and small details because I want things to
-          look just right. I love building things from scratch and figuring out
-          how everything fits together as a system. My philosophy is pretty
-          simple: keep the UI minimal and the UX even simpler. I’m always
-          curious, always learning, and always looking for the next cool thing
-          to build.
+        Engineer, breaking and building things with AI.
         </p>
-      </div>
+      </div> */}
       <div className="flex flex-col gap-2">
         <h1 className="font-xmono text-destructive text-xl">
           Connect with me on

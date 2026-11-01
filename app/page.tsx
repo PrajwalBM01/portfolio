@@ -12,7 +12,7 @@ import Image from "next/image";
 import Stacks from "@/components/Stacks";
 import Description from "@/components/Description";
 import Link from "next/link";
-import Project from "@/components/Project";
+import Projects from "@/components/Projects";
 
 export default function Home() {
   return (
@@ -85,7 +85,26 @@ export default function Home() {
                   <div className="flex flex-row items-start gap-2 px-2">
                     <div className="mt-[7px] h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/50"></div>
                     <span className="tracking-tight text-muted-foreground">
-                      Building amazing websites for clients.
+                      Engineered a real-time collaboration board enabling
+                      multiple users to drag-and-drop image, text, and to-do
+                      components with live, synchronized updates across sessions
+                      using websockets
+                    </span>
+                  </div>
+                  <div className="flex flex-row items-start gap-2 px-2">
+                    <div className="mt-[7px] h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/50"></div>
+                    <span className="tracking-tight text-muted-foreground">
+                      Developed and shipped multiple client-facing landing
+                      pages, translating designs into responsive,
+                      production-ready UI.
+                    </span>
+                  </div>
+                  <div className="flex flex-row items-start gap-2 px-2">
+                    <div className="mt-[7px] h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/50"></div>
+                    <span className="tracking-tight text-muted-foreground">
+                      Tested and integrated backend APIs into the frontend,
+                      ensuring reliable data flow and reducing client-reported
+                      UI bugs.
                     </span>
                   </div>
                   <div className="flex gap-2">
@@ -235,37 +254,7 @@ export default function Home() {
         <div className="p-2 flex flex-col gap-2">
           <div className="flex flex-col gap-2">
             <h1 className="font-xmono text-xl text-destructive">My Works.</h1>
-            <div className="grid md:grid-cols-2 justify-center items-center gap-5 px-4">
-              <Project
-                href="./projects/ironman"
-                src="/mark1.png"
-                title="Mark 1"
-                description="A 3D showcase of Ironman's Mark 1 suite in a interactive way."
-              />
-              <Project
-                href="./projects/fightclub"
-                src="/fightclub.png"
-                title="Fight Club"
-                description="A tribute to the movie fight club, with motion graphics and animations."
-              />
-              <Project
-                href="./projects/nothing"
-                src="/nothingdark.png"
-                title="Nothing"
-                description="A Bento design on Nothing phone"
-              />
-              <Project
-                href="./projects/dolist"
-                src="/doList.png"
-                title="Dolist"
-                description="A fullstack task and todo manager."
-              />
-            </div>
-            <div className="flex justify-end">
-              {/* <Button className="px-0 py-0 text-background">
-                View All <ArrowUpRight color="red" />
-              </Button> */}
-            </div>
+            <Projects />
           </div>
         </div>
         <div className="p-2 flex flex-col gap-2">
