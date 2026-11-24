@@ -26,6 +26,7 @@ const Billraklo = () => {
       github="https://github.com/PrajwalBM01/billraklo"
       website="https://billraklo.vercel.app"
       post="https://x.com/xshadowdev/status/2122942438394487147?a=AOJKcKTORGJLSXDsOeY&s=20"
+      progress="Under development"
     >
       <div className="flex flex-wrap gap-2">
         <StackBadge name={"nextjs"}>

@@ -19,6 +19,7 @@ interface DetailsType {
   website?: string;
   post?: string;
   children: React.ReactNode;
+  progress?:string
 }
 const ProjectDetials = ({
   src,
@@ -28,6 +29,7 @@ const ProjectDetials = ({
   website,
   children,
   post,
+  progress
 }: DetailsType) => {
   const { resolvedTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
@@ -103,7 +105,7 @@ const ProjectDetials = ({
               <path d="M12 18a6 6 0 1 0 0-12 6 6 0 0 0 0 12Z"></path>
             </svg>
           </div>
-          <p className="text-sm text-mutedForeground font-medium">Live</p>
+          <p className="text-sm text-mutedForeground font-medium">{progress? progress : "Live"}</p>
         </div>
       </div>
       <div className="flex flex-col p-2 gap-4">
