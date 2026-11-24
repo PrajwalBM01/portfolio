@@ -42,8 +42,8 @@ export default function Home() {
                         xmlns="http://www.w3.org/2000/svg"
                       >
                         <path
-                          fill-rule="evenodd"
-                          clip-rule="evenodd"
+                          fillRule="evenodd"
+                          clipRule="evenodd"
                           d="M118 45C118 39.4772 113.523 35 108 35H30C24.4772 35 20 30.5228 20 25V15C20 9.47715 24.4772 5 30 5L118 5C134.569 5 148 18.4315 148 35V69C148 73.4183 151.582 77 156 77V77C169.255 77 180 87.7452 180 101V165C180 181.569 166.569 195 150 195H30C24.4772 195 20 190.523 20 185V175C20 169.477 24.4772 165 30 165H140C145.523 165 150 160.523 150 155V117C150 111.477 145.523 107 140 107H63C57.4772 107 53 102.523 53 97V87C53 81.4772 57.4772 77 63 77H108C113.523 77 118 72.5228 118 67V45Z"
                           fill="url(#paint0_linear_134_6)"
                         />
@@ -56,10 +56,10 @@ export default function Home() {
                             y2="195"
                             gradientUnits="userSpaceOnUse"
                           >
-                            <stop stop-color="#16AEF9" />
-                            <stop offset="0.314328" stop-color="#7DE598" />
-                            <stop offset="0.612817" stop-color="#FFE717" />
-                            <stop offset="1" stop-color="#F975FF" />
+                            <stop stopColor="#16AEF9" />
+                            <stop offset="0.314328" stopColor="#7DE598" />
+                            <stop offset="0.612817" stopColor="#FFE717" />
+                            <stop offset="1" stopColor="#F975FF" />
                           </linearGradient>
                         </defs>
                       </svg>
@@ -75,7 +75,7 @@ export default function Home() {
                     <div className="flex flex-col justify-center items-end">
                       <h1 className="flex gap-2">India-Remote</h1>
                       <p className="text-foreground/50  text-xs">
-                        March,2026 - present
+                        March,2026 - Sep,2026
                       </p>
                     </div>
                   </div>

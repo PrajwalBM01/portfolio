@@ -26,10 +26,7 @@ const Description = () => {
         </p>
       </div> */}
       <div className="flex flex-col gap-2">
-        <h1 className="font-xmono text-destructive text-xl">
-          Connect with me on
-        </h1>
-        <div className="flex items-center gap-4 px-4 flex-wrap">
+                <div className="flex items-center gap-4 px-4 flex-wrap">
           <Tooltip>
             <TooltipTrigger>
               <a

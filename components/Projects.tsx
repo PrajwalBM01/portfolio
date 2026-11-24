@@ -13,6 +13,13 @@ const projects = [
       "A canvas-based AI chat, branch any answer into its own thread and wire context between nodes.",
   },
   {
+    href: "./projects/billraklo",
+    src: "/billraklo.png",
+    title: "Billraklo",
+    description:
+      "Collect, process, and extract invoices via WhatsApp to streamline accounting and GST filing.",
+  },
+  {
     href: "./projects/ironman",
     src: "/mark1.png",
     title: "Mark 1",
